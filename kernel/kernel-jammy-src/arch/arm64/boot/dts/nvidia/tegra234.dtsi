@@ -2709,7 +2709,7 @@
 
 	pcie@141a0000 {
 		compatible = "nvidia,tegra234-pcie";
-		power-domains = <&bpmp TEGRA234_POWER_DOMAIN_PCIEX8A>;
+		power-domains = <&bpmp TEGRA234_POWER_DOMAIN_PCIEX4A>;
 		reg = <0x00 0x141a0000 0x0 0x00020000>, /* appl registers (128K)      */
 		      <0x00 0x3a000000 0x0 0x00040000>, /* configuration space (256K) */
 		      <0x00 0x3a040000 0x0 0x00040000>, /* iATU_DMA reg space (256K)  */
@@ -2719,7 +2719,7 @@
 		#address-cells = <3>;
 		#size-cells = <2>;
 		device_type = "pci";
-		num-lanes = <8>;
+		num-lanes = <4>;
 		num-viewport = <8>;
 		linux,pci-domain = <5>;
 
